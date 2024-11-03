@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import {  FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
+import {  FormArray, FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { TaskService } from '../../../Service/task.service';
 import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
@@ -18,41 +18,58 @@ import { TooltipModule } from 'ngx-bootstrap/tooltip';
 })
 export class TaskAddComponent implements OnInit{
 
-  TaskForm:FormGroup;
-  isEditMode:boolean = false
-  UID:number;
-  Users:User[] = [];
+  public TaskForm!:FormGroup;
+  public TID:number;
+  public Users:User[] = [];
+  
 
 
   constructor(private fb:FormBuilder , private taskService:TaskService , private router:Router ,private rout:ActivatedRoute, private toastr: ToastrService ,private userservice:UserService){
-    this.TaskForm = this.fb.group({
-      title:['',Validators.required],
-      description:[''],
-      dueDate:[''],
-      priority:['',Validators.required],
-      userId:['']
+    this.taskFormInit();
+    this.TID = Number(rout.snapshot.paramMap.get('id'));
+
+    this.userservice.getUser().subscribe((data) => {
+      this.Users = data;
     })
-
-    this.UID = Number(rout.snapshot.paramMap.get('id'));
-    if(this.UID){
-      this.isEditMode = true;
-    }else{
-      this.isEditMode = false;
-    }
-
-    if(!this.isEditMode){
-      this.userservice.getUser().subscribe((data) => {
-        this.Users = data;
-      })
-    }
 
   }
 
+  private taskFormInit(){
+    this.TaskForm = this.fb.group({
+      title:['',Validators.required],
+      description:['',Validators.required],
+      dueDate:['',Validators.required],
+      priority:['',Validators.required],
+      userId:[''],
+      checkLists:this.fb.array([])
+    })
+  }
+  
+  get title() { return this.TaskForm.get('title'); }
+  get description() { return this.TaskForm.get('description'); }
+  get dueDate() { return this.TaskForm.get('dueDate'); }
+  get priority() { return this.TaskForm.get('priority'); }
+  get userId() { return this.TaskForm.get('userId'); }
+
   ngOnInit(): void {
-    if(this.isEditMode){
-      this.taskService.getTaskById(this.UID).subscribe((data) => {
+    if(this.TID){
+      this.taskService.getTaskById(this.TID).subscribe((data) => {
         data.dueDate = new Date(data.dueDate).toLocaleDateString();
         this.TaskForm.patchValue(data);
+
+        this.myCheckLists.clear();
+        data.checkLists.forEach((c:any) => {
+        
+          const group =  this.fb.group({
+          id:[''],
+          name:[''],
+          taskId:[data.id],
+          isDone:[false]
+        });
+        group.patchValue(c);
+
+        this.myCheckLists.controls.push(group);
+      });
       }, error => {
         this.toastr.warning("Task : " + error.error.title , "" , {
           positionClass:"toast-top-right",
@@ -63,29 +80,59 @@ export class TaskAddComponent implements OnInit{
     }
   }
 
-  onSubmit(){
-    if(this.isEditMode != true){
-      this.taskService.addTask(this.TaskForm.value).subscribe(data => {
-        this.toastr.success("Task Added Successfully.." , "" , {
-          positionClass:"toast-top-right",
-          progressBar:true,
-          timeOut:4000
-        })
-        this.router.navigate(['/task-list'])
+  get myCheckLists():FormArray{
+    return this.TaskForm.get('checkLists') as FormArray
+  }
+
+  addCheckList(){
+    this.myCheckLists.push(
+      this.fb.group({
+        name:[''],
+        isDone:[false]
       })
-    }else{
-      let Task = this.TaskForm.value;
-      Task.id = this.UID;
-      this.taskService.updateTask(this.UID,Task).subscribe((data) => {
-        this.toastr.success("Task Update Successfully.." , "" , {
-          positionClass:"toast-top-right",
-          progressBar:true,
-          timeOut:4000
-        })
-        this.router.navigate(['/task-list']);
+    )
+  }
+
+  removeCheckList(index:number){
+    this.myCheckLists.removeAt(index)
+  }
+
+  addTask(){
+    this.taskService.addTask(this.TaskForm.value).subscribe(data => {
+      this.toastr.success("Task Added Successfully.." , "" , {
+        positionClass:"toast-top-right",
+        progressBar:true,
+        timeOut:4000
       })
-    }
-    
+      this.router.navigate(['/task-list'])
+    },error => {
+      this.toastr.warning("Task : " + error.error.title , "" , {
+        positionClass:"toast-top-right",
+        progressBar:true,
+        timeOut:4000
+      })
+    })
+  }
+
+  updateTask(){
+    let Task = this.TaskForm.value;
+    Task.checkLists = this.myCheckLists.getRawValue();
+    Task.id = this.TID;
+    this.taskService.updateTask(this.TID,Task).subscribe((data) => {
+      this.toastr.success("Task Update Successfully.." , "" , {
+        positionClass:"toast-top-right",
+        progressBar:true,
+        timeOut:4000
+      })
+      this.router.navigate(['/task-list']);
+    },error => {
+      this.toastr.warning("Task : " + error.error.title , "" , {
+        positionClass:"toast-top-right",
+        progressBar:true,
+        timeOut:4000
+      })
+    })
+
   }
 
 }

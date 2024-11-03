@@ -1035,3 +1035,4 @@ C:\Users\UT01417\Desktop\Angular_API_Connection-main\TaskManagerAPI\TaskManagerA
 C:\Users\UT01417\Desktop\Angular_API_Connection-main\TaskManagerAPI\TaskManagerAPI\obj\Debug\net8.0\TaskManagerAPI.pdb
 C:\Users\UT01417\Desktop\Angular_API_Connection-main\TaskManagerAPI\TaskManagerAPI\obj\Debug\net8.0\TaskManagerAPI.genruntimeconfig.cache
 C:\Users\UT01417\Desktop\Angular_API_Connection-main\TaskManagerAPI\TaskManagerAPI\obj\Debug\net8.0\ref\TaskManagerAPI.dll
+C:\Users\UT01417\Desktop\Angular_API_Connection-main\TaskManagerAPI\TaskManagerAPI\obj\Debug\net8.0\TaskManagerAPI.sourcelink.json

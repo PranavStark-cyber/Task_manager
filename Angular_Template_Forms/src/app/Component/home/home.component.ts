@@ -9,13 +9,13 @@ import { Router, RouterLink } from '@angular/router';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
-  constructor(private router:Router){}
+  // constructor(private router:Router){}
 
-  GotoUserList(){
-    this.router.navigate(['/user-list']);
-  }
+  // GotoUserList(){
+  //   this.router.navigate(['/user-list']);
+  // }
 
-  GotoTaskList(){
-    this.router.navigate(['/task-list']);
-  }
+  // GotoTaskList(){
+  //   this.router.navigate(['/task-list']);
+  // }
 }
