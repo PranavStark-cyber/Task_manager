@@ -30,7 +30,6 @@ export class TaskService {
     return this.http.delete(this.taskurl +'/'+ id);
   }
 }
-
 export interface Task{
   id:number,
   title:string,
@@ -38,9 +37,8 @@ export interface Task{
   dueDate:string,
   priority:string,
   userId:number,
-  user:User
+  user:User,
   checkLists:CheckList[]
-
 }
 
 export interface CheckList{
@@ -49,15 +47,17 @@ export interface CheckList{
   isDone:boolean
 }
 
-  export interface SignUp{
-    fullName:string,
-    email:string,
-    password:string,
-    role:number
-  }
 
-  
-  export interface SignIn{
-    email:string,
-    password:string,
-  }
+
+export interface SignUp{
+  fullName:string,
+  email:string,
+  password:string,
+  role:number
+}
+
+
+export interface SignIn{
+  email:string,
+  password:string,
+}

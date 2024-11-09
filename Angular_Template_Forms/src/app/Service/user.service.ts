@@ -31,20 +31,22 @@ export class UserService {
   }
 }
 
+
 export interface User{
   id:number,
   name:string,
   email:string,
   gender:string,
   phone:string,
-  address?:Address
-  tasks?:Task[]
+  address?:Address,
+  tasks?:Task[],
+  totalTasks:number
 }
 
 export interface Address{
-  id: number,
   addressLine1:string,
   addressLine2:string,
   city:string,
-  country:string
+  country:string,
+  userId:number,
 }

@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
-import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { UserService } from '../../../Service/user.service';
 import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
 import { CommonModule } from '@angular/common';
 import { HomeComponent } from '../../home/home.component';
+import { Task, TaskService } from '../../../Service/task.service';
+import { FormsModule, ReactiveFormsModule, FormGroup, FormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-user-add',
@@ -14,16 +15,27 @@ import { HomeComponent } from '../../home/home.component';
   styleUrl: './user-add.component.css'
 })
 export class UserAddComponent {
-  UserForm:FormGroup;
-  isEditMode:boolean = false
-  UID:number;
-  addressId :number = 0;
+  public UserForm!:FormGroup;
+  public UID:number;
+  private AddressId?:number;
+
+  public Tasks?:Task[] = [] ;
 
 
-  constructor(private fb:FormBuilder , private userService:UserService , private router:Router ,private rout:ActivatedRoute, private toastr: ToastrService){
+  constructor(private fb:FormBuilder , private userService:UserService , private router:Router ,private rout:ActivatedRoute, private toastr: ToastrService ,private taskservice:TaskService){
+    this.userFormInit();
+    this.UID = Number(rout.snapshot.paramMap.get('id'));
+    this.UID ? this. _getUserById() : null;
+  }
+
+  ngOnInit(): void {
+
+  }
+
+  private userFormInit(){
     this.UserForm = this.fb.group({
       name:['',Validators.required],
-      email:[''],
+      email:['',[Validators.required,Validators.email]],
       gender:[''],
       phone:['',Validators.required],
       address:this.fb.group({
@@ -33,55 +45,46 @@ export class UserAddComponent {
         country:[''],
       })
     })
-
-    this.UID = Number(rout.snapshot.paramMap.get('id'));
-    if(this.UID){
-      this.isEditMode = true;
-    }else{
-      this.isEditMode = false;
-    }
   }
 
-  ngOnInit(): void {
-    if(this.isEditMode){
-      this.userService.getUserById(this.UID).subscribe((data) => {
-        this.addressId = Number(data.address?.id);
-        this.UserForm.patchValue(data);
-      }, error => {
-        this.toastr.warning("User : " + error.error.title , "" , {
-          positionClass:"toast-top-right",
-          progressBar:true,
-          timeOut:4000
-        })
-      });
-    }
+  public _createUser(){
+    this.userService.addUser(this.UserForm.value).subscribe(data => {
+      this.toastr.success("User Added Successfully.." , "" , {
+        positionClass:"toast-top-right",
+        progressBar:true,
+        timeOut:4000
+      })
+      this.router.navigate(['/home/user-list'])
+    })
   }
 
-  onSubmit(){
-    if(this.isEditMode != true){
-      this.userService.addUser(this.UserForm.value).subscribe(data => {
-        this.toastr.success("User Added Successfully.." , "" , {
-          positionClass:"toast-top-right",
-          progressBar:true,
-          timeOut:4000
-        })
-        this.router.navigate(['/user-list'])
+  public _updateUser(){
+    let User = this.UserForm.value;
+    User.id = this.UID;
+    User.address.id = this.AddressId
+    User.address.userId = this.UID
+    this.userService.updateUser(this.UID,User).subscribe((data) => {
+      this.toastr.success("User Update Successfully.." , "" , {
+        positionClass:"toast-top-right",
+        progressBar:true,
+        timeOut:4000
       })
-    }else{
-      let User = this.UserForm.value;
-      User.id = this.UID;
-      User.address.id = this.addressId;
+      this.router.navigate(['/home/user-list']);
+    })
+  }
 
-      this.userService.updateUser(this.UID,User).subscribe((data) => {
-        this.toastr.success("User Update Successfully.." , "" , {
-          positionClass:"toast-top-right",
-          progressBar:true,
-          timeOut:4000
-        })
-        this.router.navigate(['/user-list']);
+  private _getUserById(){
+    this.userService.getUserById(this.UID).subscribe((data) => {
+      this.UserForm.patchValue(data);
+      this.AddressId = data.address?.userId
+      this.Tasks = data.tasks
+    }, error => {
+      this.toastr.warning("User : " + error.error.title , "" , {
+        positionClass:"toast-top-right",
+        progressBar:true,
+        timeOut:4000
       })
-    }
-    
+    });
   }
 
   countries: string[] = [

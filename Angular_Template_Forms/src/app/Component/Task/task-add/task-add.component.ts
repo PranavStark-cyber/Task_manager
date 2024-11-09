@@ -23,7 +23,6 @@ export class TaskAddComponent implements OnInit{
   public Users:User[] = [];
   
 
-
   constructor(private fb:FormBuilder , private taskService:TaskService , private router:Router ,private rout:ActivatedRoute, private toastr: ToastrService ,private userservice:UserService){
     this.taskFormInit();
     this.TID = Number(rout.snapshot.paramMap.get('id'));
@@ -104,7 +103,7 @@ export class TaskAddComponent implements OnInit{
         progressBar:true,
         timeOut:4000
       })
-      this.router.navigate(['/task-list'])
+      this.router.navigate(['/home/task-list'])
     },error => {
       this.toastr.warning("Task : " + error.error.title , "" , {
         positionClass:"toast-top-right",
@@ -124,7 +123,7 @@ export class TaskAddComponent implements OnInit{
         progressBar:true,
         timeOut:4000
       })
-      this.router.navigate(['/task-list']);
+      this.router.navigate(['/home/task-list']);
     },error => {
       this.toastr.warning("Task : " + error.error.title , "" , {
         positionClass:"toast-top-right",
@@ -134,5 +133,6 @@ export class TaskAddComponent implements OnInit{
     })
 
   }
+
 
 }
