@@ -1,46 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\UT01417\\Desktop\\Angular_API_Connection-main\\TaskManagerAPI\\",
+  "WorkspaceRootPath": "C:\\Users\\UT01102\\Desktop\\Task_Manager\\TaskManagerAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C66477A3-BBD8-48D6-81D5-B4B14BAEE76F}|TaskManagerAPI\\TaskManagerAPI.csproj|c:\\users\\ut01417\\desktop\\angular_api_connection-main\\taskmanagerapi\\taskmanagerapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C66477A3-BBD8-48D6-81D5-B4B14BAEE76F}|TaskManagerAPI\\TaskManagerAPI.csproj|solutionrelative:taskmanagerapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C66477A3-BBD8-48D6-81D5-B4B14BAEE76F}|TaskManagerAPI\\TaskManagerAPI.csproj|c:\\users\\ut01102\\desktop\\task_manager\\taskmanagerapi\\taskmanagerapi\\services\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C66477A3-BBD8-48D6-81D5-B4B14BAEE76F}|TaskManagerAPI\\TaskManagerAPI.csproj|solutionrelative:taskmanagerapi\\services\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C66477A3-BBD8-48D6-81D5-B4B14BAEE76F}|TaskManagerAPI\\TaskManagerAPI.csproj|c:\\users\\ut01417\\desktop\\angular_api_connection-main\\taskmanagerapi\\taskmanagerapi\\migrations\\20241102053047_init3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C66477A3-BBD8-48D6-81D5-B4B14BAEE76F}|TaskManagerAPI\\TaskManagerAPI.csproj|solutionrelative:taskmanagerapi\\migrations\\20241102053047_init3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C66477A3-BBD8-48D6-81D5-B4B14BAEE76F}|TaskManagerAPI\\TaskManagerAPI.csproj|c:\\users\\ut01102\\desktop\\task_manager\\taskmanagerapi\\taskmanagerapi\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C66477A3-BBD8-48D6-81D5-B4B14BAEE76F}|TaskManagerAPI\\TaskManagerAPI.csproj|solutionrelative:taskmanagerapi\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C66477A3-BBD8-48D6-81D5-B4B14BAEE76F}|TaskManagerAPI\\TaskManagerAPI.csproj|c:\\users\\ut01417\\desktop\\angular_api_connection-main\\taskmanagerapi\\taskmanagerapi\\controllers\\taskitemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C66477A3-BBD8-48D6-81D5-B4B14BAEE76F}|TaskManagerAPI\\TaskManagerAPI.csproj|solutionrelative:taskmanagerapi\\controllers\\taskitemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C66477A3-BBD8-48D6-81D5-B4B14BAEE76F}|TaskManagerAPI\\TaskManagerAPI.csproj|c:\\users\\ut01102\\desktop\\task_manager\\taskmanagerapi\\taskmanagerapi\\iservice\\iauthenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C66477A3-BBD8-48D6-81D5-B4B14BAEE76F}|TaskManagerAPI\\TaskManagerAPI.csproj|solutionrelative:taskmanagerapi\\iservice\\iauthenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C66477A3-BBD8-48D6-81D5-B4B14BAEE76F}|TaskManagerAPI\\TaskManagerAPI.csproj|c:\\users\\ut01417\\desktop\\angular_api_connection-main\\taskmanagerapi\\taskmanagerapi\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C66477A3-BBD8-48D6-81D5-B4B14BAEE76F}|TaskManagerAPI\\TaskManagerAPI.csproj|solutionrelative:taskmanagerapi\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C66477A3-BBD8-48D6-81D5-B4B14BAEE76F}|TaskManagerAPI\\TaskManagerAPI.csproj|c:\\users\\ut01102\\desktop\\task_manager\\taskmanagerapi\\taskmanagerapi\\irepository\\iauthenticationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C66477A3-BBD8-48D6-81D5-B4B14BAEE76F}|TaskManagerAPI\\TaskManagerAPI.csproj|solutionrelative:taskmanagerapi\\irepository\\iauthenticationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C66477A3-BBD8-48D6-81D5-B4B14BAEE76F}|TaskManagerAPI\\TaskManagerAPI.csproj|c:\\users\\ut01417\\desktop\\angular_api_connection-main\\taskmanagerapi\\taskmanagerapi\\entity\\checklist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C66477A3-BBD8-48D6-81D5-B4B14BAEE76F}|TaskManagerAPI\\TaskManagerAPI.csproj|solutionrelative:taskmanagerapi\\entity\\checklist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C66477A3-BBD8-48D6-81D5-B4B14BAEE76F}|TaskManagerAPI\\TaskManagerAPI.csproj|c:\\users\\ut01417\\desktop\\angular_api_connection-main\\taskmanagerapi\\taskmanagerapi\\entity\\taskitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C66477A3-BBD8-48D6-81D5-B4B14BAEE76F}|TaskManagerAPI\\TaskManagerAPI.csproj|solutionrelative:taskmanagerapi\\entity\\taskitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C66477A3-BBD8-48D6-81D5-B4B14BAEE76F}|TaskManagerAPI\\TaskManagerAPI.csproj|c:\\users\\ut01417\\desktop\\angular_api_connection-main\\taskmanagerapi\\taskmanagerapi\\data\\taskcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C66477A3-BBD8-48D6-81D5-B4B14BAEE76F}|TaskManagerAPI\\TaskManagerAPI.csproj|solutionrelative:taskmanagerapi\\data\\taskcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C66477A3-BBD8-48D6-81D5-B4B14BAEE76F}|TaskManagerAPI\\TaskManagerAPI.csproj|c:\\users\\ut01417\\desktop\\angular_api_connection-main\\taskmanagerapi\\taskmanagerapi\\entity\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C66477A3-BBD8-48D6-81D5-B4B14BAEE76F}|TaskManagerAPI\\TaskManagerAPI.csproj|solutionrelative:taskmanagerapi\\entity\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C66477A3-BBD8-48D6-81D5-B4B14BAEE76F}|TaskManagerAPI\\TaskManagerAPI.csproj|c:\\users\\ut01417\\desktop\\angular_api_connection-main\\taskmanagerapi\\taskmanagerapi\\entity\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C66477A3-BBD8-48D6-81D5-B4B14BAEE76F}|TaskManagerAPI\\TaskManagerAPI.csproj|solutionrelative:taskmanagerapi\\entity\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C66477A3-BBD8-48D6-81D5-B4B14BAEE76F}|TaskManagerAPI\\TaskManagerAPI.csproj|c:\\users\\ut01417\\desktop\\angular_api_connection-main\\taskmanagerapi\\taskmanagerapi\\dto\\taskitemrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C66477A3-BBD8-48D6-81D5-B4B14BAEE76F}|TaskManagerAPI\\TaskManagerAPI.csproj|solutionrelative:taskmanagerapi\\dto\\taskitemrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C66477A3-BBD8-48D6-81D5-B4B14BAEE76F}|TaskManagerAPI\\TaskManagerAPI.csproj|c:\\users\\ut01102\\desktop\\task_manager\\taskmanagerapi\\taskmanagerapi\\repository\\authenticationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C66477A3-BBD8-48D6-81D5-B4B14BAEE76F}|TaskManagerAPI\\TaskManagerAPI.csproj|solutionrelative:taskmanagerapi\\repository\\authenticationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,130 +30,85 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Address.cs",
-              "DocumentMoniker": "C:\\Users\\UT01417\\Desktop\\Angular_API_Connection-main\\TaskManagerAPI\\TaskManagerAPI\\Entity\\Address.cs",
-              "RelativeDocumentMoniker": "TaskManagerAPI\\Entity\\Address.cs",
-              "ToolTip": "C:\\Users\\UT01417\\Desktop\\Angular_API_Connection-main\\TaskManagerAPI\\TaskManagerAPI\\Entity\\Address.cs",
-              "RelativeToolTip": "TaskManagerAPI\\Entity\\Address.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAZAAAA",
+              "DocumentIndex": 1,
+              "Title": "AuthenticationController.cs",
+              "DocumentMoniker": "C:\\Users\\UT01102\\Desktop\\Task_Manager\\TaskManagerAPI\\TaskManagerAPI\\Controllers\\AuthenticationController.cs",
+              "RelativeDocumentMoniker": "TaskManagerAPI\\Controllers\\AuthenticationController.cs",
+              "ToolTip": "C:\\Users\\UT01102\\Desktop\\Task_Manager\\TaskManagerAPI\\TaskManagerAPI\\Controllers\\AuthenticationController.cs",
+              "RelativeToolTip": "TaskManagerAPI\\Controllers\\AuthenticationController.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAgwCgAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-26T05:10:35.795Z",
+              "WhenOpened": "2024-11-03T04:36:42.302Z",
               "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "20241102053047_init3.cs",
-              "DocumentMoniker": "C:\\Users\\UT01417\\Desktop\\Angular_API_Connection-main\\TaskManagerAPI\\TaskManagerAPI\\Migrations\\20241102053047_init3.cs",
-              "RelativeDocumentMoniker": "TaskManagerAPI\\Migrations\\20241102053047_init3.cs",
-              "ToolTip": "C:\\Users\\UT01417\\Desktop\\Angular_API_Connection-main\\TaskManagerAPI\\TaskManagerAPI\\Migrations\\20241102053047_init3.cs",
-              "RelativeToolTip": "TaskManagerAPI\\Migrations\\20241102053047_init3.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 0,
+              "Title": "AuthenticationService.cs",
+              "DocumentMoniker": "C:\\Users\\UT01102\\Desktop\\Task_Manager\\TaskManagerAPI\\TaskManagerAPI\\Services\\AuthenticationService.cs",
+              "RelativeDocumentMoniker": "TaskManagerAPI\\Services\\AuthenticationService.cs",
+              "ToolTip": "C:\\Users\\UT01102\\Desktop\\Task_Manager\\TaskManagerAPI\\TaskManagerAPI\\Services\\AuthenticationService.cs*",
+              "RelativeToolTip": "TaskManagerAPI\\Services\\AuthenticationService.cs*",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAwwFMAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T05:30:47.26Z",
+              "WhenOpened": "2024-11-03T04:36:49.766Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "CheckList.cs",
-              "DocumentMoniker": "C:\\Users\\UT01417\\Desktop\\Angular_API_Connection-main\\TaskManagerAPI\\TaskManagerAPI\\Entity\\CheckList.cs",
-              "RelativeDocumentMoniker": "TaskManagerAPI\\Entity\\CheckList.cs",
-              "ToolTip": "C:\\Users\\UT01417\\Desktop\\Angular_API_Connection-main\\TaskManagerAPI\\TaskManagerAPI\\Entity\\CheckList.cs",
-              "RelativeToolTip": "TaskManagerAPI\\Entity\\CheckList.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAArAAAA",
+              "Title": "AuthenticationRepository.cs",
+              "DocumentMoniker": "C:\\Users\\UT01102\\Desktop\\Task_Manager\\TaskManagerAPI\\TaskManagerAPI\\Repository\\AuthenticationRepository.cs",
+              "RelativeDocumentMoniker": "TaskManagerAPI\\Repository\\AuthenticationRepository.cs",
+              "ToolTip": "C:\\Users\\UT01102\\Desktop\\Task_Manager\\TaskManagerAPI\\TaskManagerAPI\\Repository\\AuthenticationRepository.cs",
+              "RelativeToolTip": "TaskManagerAPI\\Repository\\AuthenticationRepository.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAxwBwAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T05:16:48.44Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "TaskItem.cs",
-              "DocumentMoniker": "C:\\Users\\UT01417\\Desktop\\Angular_API_Connection-main\\TaskManagerAPI\\TaskManagerAPI\\Entity\\TaskItem.cs",
-              "RelativeDocumentMoniker": "TaskManagerAPI\\Entity\\TaskItem.cs",
-              "ToolTip": "C:\\Users\\UT01417\\Desktop\\Angular_API_Connection-main\\TaskManagerAPI\\TaskManagerAPI\\Entity\\TaskItem.cs",
-              "RelativeToolTip": "TaskManagerAPI\\Entity\\TaskItem.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-27T03:32:36.317Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\UT01417\\Desktop\\Angular_API_Connection-main\\TaskManagerAPI\\TaskManagerAPI\\Program.cs",
-              "RelativeDocumentMoniker": "TaskManagerAPI\\Program.cs",
-              "ToolTip": "C:\\Users\\UT01417\\Desktop\\Angular_API_Connection-main\\TaskManagerAPI\\TaskManagerAPI\\Program.cs",
-              "RelativeToolTip": "TaskManagerAPI\\Program.cs",
-              "ViewState": "AQIAABkAAAAAAAAAAAAgwC4AAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-26T06:37:57.025Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-03T04:36:53.473Z",
+              "IsPinned": true
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "TaskItemsController.cs",
-              "DocumentMoniker": "C:\\Users\\UT01417\\Desktop\\Angular_API_Connection-main\\TaskManagerAPI\\TaskManagerAPI\\Controllers\\TaskItemsController.cs",
-              "RelativeDocumentMoniker": "TaskManagerAPI\\Controllers\\TaskItemsController.cs",
-              "ToolTip": "C:\\Users\\UT01417\\Desktop\\Angular_API_Connection-main\\TaskManagerAPI\\TaskManagerAPI\\Controllers\\TaskItemsController.cs",
-              "RelativeToolTip": "TaskManagerAPI\\Controllers\\TaskItemsController.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAD4vxsAAAAMAAAA",
+              "Title": "IAuthenticationService.cs",
+              "DocumentMoniker": "C:\\Users\\UT01102\\Desktop\\Task_Manager\\TaskManagerAPI\\TaskManagerAPI\\IService\\IAuthenticationService.cs",
+              "RelativeDocumentMoniker": "TaskManagerAPI\\IService\\IAuthenticationService.cs",
+              "ToolTip": "C:\\Users\\UT01102\\Desktop\\Task_Manager\\TaskManagerAPI\\TaskManagerAPI\\IService\\IAuthenticationService.cs",
+              "RelativeToolTip": "TaskManagerAPI\\IService\\IAuthenticationService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-26T05:39:05.198Z"
+              "WhenOpened": "2024-11-03T04:36:55.755Z",
+              "IsPinned": true
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "UsersController.cs",
-              "DocumentMoniker": "C:\\Users\\UT01417\\Desktop\\Angular_API_Connection-main\\TaskManagerAPI\\TaskManagerAPI\\Controllers\\UsersController.cs",
-              "RelativeDocumentMoniker": "TaskManagerAPI\\Controllers\\UsersController.cs",
-              "ToolTip": "C:\\Users\\UT01417\\Desktop\\Angular_API_Connection-main\\TaskManagerAPI\\TaskManagerAPI\\Controllers\\UsersController.cs",
-              "RelativeToolTip": "TaskManagerAPI\\Controllers\\UsersController.cs",
-              "ViewState": "AQIAACAAAAAAAAAAAAA9wDcAAABGAAAA",
+              "Title": "IAuthenticationRepository.cs",
+              "DocumentMoniker": "C:\\Users\\UT01102\\Desktop\\Task_Manager\\TaskManagerAPI\\TaskManagerAPI\\IRepository\\IAuthenticationRepository.cs",
+              "RelativeDocumentMoniker": "TaskManagerAPI\\IRepository\\IAuthenticationRepository.cs",
+              "ToolTip": "C:\\Users\\UT01102\\Desktop\\Task_Manager\\TaskManagerAPI\\TaskManagerAPI\\IRepository\\IAuthenticationRepository.cs",
+              "RelativeToolTip": "TaskManagerAPI\\IRepository\\IAuthenticationRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-26T05:33:26.858Z"
+              "WhenOpened": "2024-11-03T04:36:58.243Z",
+              "IsPinned": true
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "TaskContext.cs",
-              "DocumentMoniker": "C:\\Users\\UT01417\\Desktop\\Angular_API_Connection-main\\TaskManagerAPI\\TaskManagerAPI\\Data\\TaskContext.cs",
-              "RelativeDocumentMoniker": "TaskManagerAPI\\Data\\TaskContext.cs",
-              "ToolTip": "C:\\Users\\UT01417\\Desktop\\Angular_API_Connection-main\\TaskManagerAPI\\TaskManagerAPI\\Data\\TaskContext.cs",
-              "RelativeToolTip": "TaskManagerAPI\\Data\\TaskContext.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABwAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-26T05:21:31.569Z"
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "TaskItemRequestDTO.cs",
-              "DocumentMoniker": "C:\\Users\\UT01417\\Desktop\\Angular_API_Connection-main\\TaskManagerAPI\\TaskManagerAPI\\DTO\\TaskItemRequestDTO.cs",
-              "RelativeDocumentMoniker": "TaskManagerAPI\\DTO\\TaskItemRequestDTO.cs",
-              "ToolTip": "C:\\Users\\UT01417\\Desktop\\Angular_API_Connection-main\\TaskManagerAPI\\TaskManagerAPI\\DTO\\TaskItemRequestDTO.cs",
-              "RelativeToolTip": "TaskManagerAPI\\DTO\\TaskItemRequestDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-27T03:32:41.215Z"
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\UT01417\\Desktop\\Angular_API_Connection-main\\TaskManagerAPI\\TaskManagerAPI\\Entity\\User.cs",
-              "RelativeDocumentMoniker": "TaskManagerAPI\\Entity\\User.cs",
-              "ToolTip": "C:\\Users\\UT01417\\Desktop\\Angular_API_Connection-main\\TaskManagerAPI\\TaskManagerAPI\\Entity\\User.cs",
-              "RelativeToolTip": "TaskManagerAPI\\Entity\\User.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAsAAABQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-26T05:10:14.835Z"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             }
           ]
         }

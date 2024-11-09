@@ -25,7 +25,7 @@ namespace TaskManagerAPI.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<TaskItem>>> GetTasks()
         {
-            return await _context.Tasks.Include(a => a.User).Include(c=>c.CheckLists).ToListAsync();
+            return await _context.Tasks.Include(a => a.User).Include(c => c.CheckLists).ToListAsync();
         }
 
         // GET: api/TaskItems/5
@@ -52,17 +52,18 @@ namespace TaskManagerAPI.Controllers
                 return BadRequest();
             }
 
+            
+
             foreach (var item in taskItem.CheckLists)
             {
                 _context.Entry(item).State = EntityState.Modified;
             }
 
-
             _context.Entry(taskItem).State = EntityState.Modified;
-
+           
             try
             {
-                await _context.SaveChangesAsync();
+                    await _context.SaveChangesAsync();
             }
             catch (DbUpdateConcurrencyException)
             {

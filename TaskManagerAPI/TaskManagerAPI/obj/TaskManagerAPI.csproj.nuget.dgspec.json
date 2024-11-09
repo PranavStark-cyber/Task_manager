@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\UT01417\\Desktop\\Angular_API_Connection-main\\TaskManagerAPI\\TaskManagerAPI\\TaskManagerAPI.csproj": {}
+    "C:\\Users\\Tony stark\\OneDrive\\Desktop\\Task_manager\\TaskManagerAPI\\TaskManagerAPI\\TaskManagerAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\UT01417\\Desktop\\Angular_API_Connection-main\\TaskManagerAPI\\TaskManagerAPI\\TaskManagerAPI.csproj": {
+    "C:\\Users\\Tony stark\\OneDrive\\Desktop\\Task_manager\\TaskManagerAPI\\TaskManagerAPI\\TaskManagerAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\UT01417\\Desktop\\Angular_API_Connection-main\\TaskManagerAPI\\TaskManagerAPI\\TaskManagerAPI.csproj",
+        "projectUniqueName": "C:\\Users\\Tony stark\\OneDrive\\Desktop\\Task_manager\\TaskManagerAPI\\TaskManagerAPI\\TaskManagerAPI.csproj",
         "projectName": "TaskManagerAPI",
-        "projectPath": "C:\\Users\\UT01417\\Desktop\\Angular_API_Connection-main\\TaskManagerAPI\\TaskManagerAPI\\TaskManagerAPI.csproj",
-        "packagesPath": "C:\\Users\\UT01417\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\UT01417\\Desktop\\Angular_API_Connection-main\\TaskManagerAPI\\TaskManagerAPI\\obj\\",
+        "projectPath": "C:\\Users\\Tony stark\\OneDrive\\Desktop\\Task_manager\\TaskManagerAPI\\TaskManagerAPI\\TaskManagerAPI.csproj",
+        "packagesPath": "C:\\Users\\Tony stark\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Tony stark\\OneDrive\\Desktop\\Task_manager\\TaskManagerAPI\\TaskManagerAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\UT01417\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Tony stark\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -46,6 +46,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "BCrypt.Net": {
+              "target": "Package",
+              "version": "[0.1.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.10, )"
@@ -88,7 +96,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
