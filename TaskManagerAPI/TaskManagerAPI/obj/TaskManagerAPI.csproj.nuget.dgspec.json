@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Tony stark\\OneDrive\\Desktop\\Task_manager\\TaskManagerAPI\\TaskManagerAPI\\TaskManagerAPI.csproj": {}
+    "C:\\Users\\UT01417\\Desktop\\Task_manager\\TaskManagerAPI\\TaskManagerAPI\\TaskManagerAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Tony stark\\OneDrive\\Desktop\\Task_manager\\TaskManagerAPI\\TaskManagerAPI\\TaskManagerAPI.csproj": {
+    "C:\\Users\\UT01417\\Desktop\\Task_manager\\TaskManagerAPI\\TaskManagerAPI\\TaskManagerAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Tony stark\\OneDrive\\Desktop\\Task_manager\\TaskManagerAPI\\TaskManagerAPI\\TaskManagerAPI.csproj",
+        "projectUniqueName": "C:\\Users\\UT01417\\Desktop\\Task_manager\\TaskManagerAPI\\TaskManagerAPI\\TaskManagerAPI.csproj",
         "projectName": "TaskManagerAPI",
-        "projectPath": "C:\\Users\\Tony stark\\OneDrive\\Desktop\\Task_manager\\TaskManagerAPI\\TaskManagerAPI\\TaskManagerAPI.csproj",
-        "packagesPath": "C:\\Users\\Tony stark\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Tony stark\\OneDrive\\Desktop\\Task_manager\\TaskManagerAPI\\TaskManagerAPI\\obj\\",
+        "projectPath": "C:\\Users\\UT01417\\Desktop\\Task_manager\\TaskManagerAPI\\TaskManagerAPI\\TaskManagerAPI.csproj",
+        "packagesPath": "C:\\Users\\UT01417\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\UT01417\\Desktop\\Task_manager\\TaskManagerAPI\\TaskManagerAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Tony stark\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\UT01417\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -96,7 +96,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -14,6 +14,7 @@ import { FormsModule } from '@angular/forms';
   selector: 'app-user-list',
   standalone: true,
   imports: [CommonModule,FormsModule,SearchUsersPipe,HomeComponent],
+  providers: [BsModalService],
   templateUrl: './user-list.component.html',
   styleUrl: './user-list.component.css'
 })

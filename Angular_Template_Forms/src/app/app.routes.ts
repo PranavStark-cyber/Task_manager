@@ -4,9 +4,10 @@ import { TaskAddComponent } from './Component/Task/task-add/task-add.component';
 import { HomeComponent } from './Component/home/home.component';
 import { UserListComponent } from './Component/User/user-list/user-list.component';
 import { UserAddComponent } from './Component/User/user-add/user-add.component';
+import { RegisterComponent } from './Component/Resgister/register/register.component';
+import { LoginComponent } from './Component/Login/login/login.component';
 
 export const routes: Routes = [
- {path:'' , component:RegisterComponent},
     {path:'register' , component:RegisterComponent},
     {path:'login' , component:LoginComponent},
 
