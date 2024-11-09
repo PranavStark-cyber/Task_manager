@@ -48,3 +48,16 @@ export interface CheckList{
   name:string,
   isDone:boolean
 }
+
+  export interface SignUp{
+    fullName:string,
+    email:string,
+    password:string,
+    role:number
+  }
+
+  
+  export interface SignIn{
+    email:string,
+    password:string,
+  }
